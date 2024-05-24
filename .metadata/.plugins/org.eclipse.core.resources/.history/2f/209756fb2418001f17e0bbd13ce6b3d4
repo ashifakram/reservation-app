@@ -1,0 +1,7 @@
+package org.jsp.reservationapi.exception;
+
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+public class ReservationApiExceptionHandler extends ResponseEntityExceptionHandler{
+
+}

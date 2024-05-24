@@ -1,0 +1,8 @@
+package org.jsp.reservationapi.dto;
+
+import lombok.Data;
+
+@Data
+public class UserRequest {
+
+}
