@@ -1,10 +1,13 @@
 package org.jsp.reservationapi.model;
 
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -32,4 +35,10 @@ public class Admin {
 	private String travels_name;
 	@Column(nullable = false)
 	private String password;
+	@Column(unique = true)
+	private String token;
+	@Column( nullable = false)
+	private String status;
+	@OneToMany( mappedBy = "admin")
+	private List<Bus> buses;
 }

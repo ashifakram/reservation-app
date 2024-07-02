@@ -1,0 +1,42 @@
+.adminsignup{ 
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: rgb(98, 130, 181);
+    font-family: cursive;
+}
+
+.adminsignup form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    /* border: 1px solid violet; */
+    box-shadow: 0px 0px 20px rgb(108, 12, 68);
+    padding: 24px;
+    gap: 10px;
+    background-color: #f0f8ff;
+    border-radius: 15px;
+}
+
+.adminsignup form input::placeholder{
+    padding: 10px 10px;
+    color: rgb(138, 141, 144);
+}
+
+.adminsignup form button:hover{
+
+    background-color: rgb(166, 175, 172);
+}
+
+.adminsignup form input{
+
+    border-radius: 5px;
+}
+
+.adminsignup form h2{
+
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(67, 66, 69);
+}

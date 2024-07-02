@@ -1,8 +1,0 @@
-package org.jsp.reservationapi.exception;
-
-public class AdminNotFoundException extends RuntimeException{
-	
-	public AdminNotFoundException() {
-		// TODO Auto-generated constructor stub
-	}
-}

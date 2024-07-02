@@ -1,0 +1,201 @@
+package org.jsp.reservationapi.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.jsp.reservationapi.dao.AdminDao;
+import org.jsp.reservationapi.dao.BusDao;
+import org.jsp.reservationapi.dto.BusRequest;
+import org.jsp.reservationapi.dto.BusResponse;
+import org.jsp.reservationapi.dto.ResponseStructure;
+import org.jsp.reservationapi.exception.AdminNotFoundException;
+import org.jsp.reservationapi.exception.BusNotFoundException;
+import org.jsp.reservationapi.model.Admin;
+import org.jsp.reservationapi.model.Bus;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BusService {
+
+	@Autowired
+	private BusDao busDao;
+	@Autowired
+	private AdminDao adminDao;
+
+	public ResponseEntity<ResponseStructure<BusResponse>> saveBus(BusRequest busRequest, int id) {
+
+		ResponseStructure<BusResponse> structure = new ResponseStructure<>();
+
+		Optional<Admin> recAdmin = adminDao.findAdminById(id);
+
+		if (recAdmin.isPresent()) {
+
+			Admin admin = recAdmin.get();
+			
+			Bus bus = mapToBus(busRequest);
+			bus.setAvailableSeats(bus.getAvailableSeats());
+			bus.setAdmin(admin); // Assigning admin to bus
+			admin.getBuses().add(bus); // Assignig bus to admin
+
+			adminDao.saveAdmin(admin); // updating admin
+
+			structure.setMessage("Bus saved");
+			structure.setData(mapToBusResponse(busDao.saveBus(bus)));
+			structure.setStatusCode(HttpStatus.CREATED.value());
+
+			return ResponseEntity.status(HttpStatus.CREATED).body(structure);
+		}
+
+		throw new AdminNotFoundException("Cannot saved Bus as Admin Id is invalid");
+	}
+
+	public ResponseEntity<ResponseStructure<BusResponse>> updateBus(BusRequest busRequest, int id) {
+
+		ResponseStructure<BusResponse> structure = new ResponseStructure<>();
+
+		Optional<Bus> recBus = busDao.findById(id);
+
+		if (recBus.isPresent()) {
+
+			Bus dbBus = recBus.get();
+
+			dbBus.setName(busRequest.getName());
+			dbBus.setBus_number(busRequest.getBus_number());
+			dbBus.setDod(busRequest.getDod());
+			dbBus.setFrom_loc(busRequest.getFrom_loc());
+			dbBus.setTo_loc(busRequest.getTo_loc());
+			dbBus.setNo_of_seats(busRequest.getNo_of_seats());
+			dbBus.setCostPerSeat(busRequest.getCostPerSeat()); 
+			dbBus.setAvailableSeats(busRequest.getNo_of_seats());
+
+			structure.setData(mapToBusResponse(dbBus));
+			//structure.setData(dbBus);
+			structure.setMessage("Bus updated");
+			structure.setStatusCode(HttpStatus.ACCEPTED.value());
+
+			return ResponseEntity.status(HttpStatus.ACCEPTED).body(structure);
+		}
+
+		throw new BusNotFoundException("Cannot update Bus as Id is Invalid");
+	}
+	
+	public ResponseEntity<ResponseStructure<List<Bus>>> findBuses(String from, String to, LocalDate dateOfDeparture) {
+		
+		ResponseStructure<List<Bus>> structure = new ResponseStructure<>();
+		List<Bus> buses = busDao.findBuses(from, to, dateOfDeparture);
+		if (buses.isEmpty())
+			throw new BusNotFoundException("No Buses for entered route on this Date");
+		structure.setData(buses);
+		structure.setMessage("List of Buses for entered route on this Date");
+		structure.setStatusCode(HttpStatus.OK.value());
+		return ResponseEntity.status(HttpStatus.OK).body(structure);
+	}
+
+	public ResponseEntity<ResponseStructure<List<Bus>>> findAll() {
+		ResponseStructure<List<Bus>> structure = new ResponseStructure<>();
+		structure.setData(busDao.findAll());
+		structure.setMessage("List of All Buses");
+		structure.setStatusCode(HttpStatus.OK.value());
+		return ResponseEntity.status(HttpStatus.OK).body(structure);
+	}
+
+	public ResponseEntity<ResponseStructure<Bus>> findById(int id) {
+		ResponseStructure<Bus> structure = new ResponseStructure<>();
+		Optional<Bus> recBus = busDao.findById(id);
+		if (recBus.isEmpty())
+			throw new BusNotFoundException("Invalid Bus id");
+		structure.setData(recBus.get());
+		structure.setMessage("Bus Found");
+		structure.setStatusCode(HttpStatus.OK.value());
+		return ResponseEntity.status(HttpStatus.OK).body(structure);
+	}
+
+	public ResponseEntity<ResponseStructure<BusResponse>> findBusById(int id) {
+
+		ResponseStructure<BusResponse> structure = new ResponseStructure<>();
+
+		Optional<Bus> recBus = busDao.findById(id);
+
+		if (recBus.isPresent()) {
+
+			structure.setData(mapToBusResponse(recBus.get()));
+			structure.setMessage("Bus Found");
+			structure.setStatusCode(HttpStatus.OK.value());
+
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new BusNotFoundException("Invalid Bus Id");
+	}
+
+	public ResponseEntity<ResponseStructure<BusResponse>> findBusByBusNumber(String bus_number) {
+
+		ResponseStructure<BusResponse> structure = new ResponseStructure<>();
+
+		Optional<Bus> recBus = busDao.findBusByBusNumber(bus_number);
+
+		if (recBus.isPresent()) {
+
+			structure.setData(mapToBusResponse(recBus.get()));
+			structure.setMessage("Bus Found");
+			structure.setStatusCode(HttpStatus.OK.value());
+
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+
+		throw new BusNotFoundException("No Bus Found with entered bus number");
+	}
+
+	public ResponseEntity<ResponseStructure<String>> deleteBusById(int id) {
+
+		ResponseStructure<String> structure = new ResponseStructure<>();
+
+		Optional<Bus> recBus = busDao.findById(id);
+
+		if (recBus.isPresent()) {
+
+			busDao.deleteBus(id);
+
+			structure.setMessage("Bus deleted succesfully");
+			structure.setData("Bus Found");
+			structure.setStatusCode(HttpStatus.OK.value());
+
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+
+		throw new BusNotFoundException("Cannot delete Bus as Id is invalid");
+	}
+
+	public ResponseEntity<ResponseStructure<List<Bus>>> findByFrom_locAndTo_loc(String from_loc, String to_loc) {
+		
+		ResponseStructure<List<Bus>> structure = new ResponseStructure<>();
+		
+		List<Bus> buses = busDao.findByFrom_locAndTo_loc(from_loc, to_loc);
+		
+		if( buses.isEmpty()) {
+			throw new BusNotFoundException("No Buses Found for the entered Locations.");
+		}
+		
+		structure.setData(buses);
+		structure.setMessage("List of buses");
+		structure.setStatusCode(HttpStatus.OK.value());;
+		
+		return ResponseEntity.status(HttpStatus.OK).body(structure);
+	}
+
+	private Bus mapToBus(BusRequest busRequest) {
+
+		return Bus.builder().name(busRequest.getName()).bus_number(busRequest.getBus_number()).dod(busRequest.getDod())
+				.from_loc(busRequest.getFrom_loc()).to_loc(busRequest.getTo_loc())
+				.no_of_seats(busRequest.getNo_of_seats()).costPerSeat(busRequest.getCostPerSeat()).build();
+	}
+
+	private BusResponse mapToBusResponse(Bus bus) {
+
+		return BusResponse.builder().id(bus.getId()).name(bus.getName()).bus_number(bus.getBus_number())
+				.dod(bus.getDod()).from_loc(bus.getFrom_loc()).to_loc(bus.getTo_loc()).no_of_seats(bus.getNo_of_seats())
+				.build();
+	}
+}

@@ -1,0 +1,42 @@
+.addbus{ 
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: rgb(10, 219, 198);
+    font-family: cursive;
+}
+
+.addbus form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    /* border: 1px solid violet; */
+    box-shadow: 0px 0px 20px rgb(108, 12, 68);
+    padding: 24px;
+    gap: 10px;
+    background-color: #d0ec72;
+    border-radius: 15px;
+}
+
+.addbus form input::placeholder{
+    padding: 10px 10px;
+    color: rgb(138, 141, 144);
+}
+
+.addbus form button:hover{
+
+    background-color: rgb(166, 175, 172);
+}
+
+.addbus form input{
+
+    border-radius: 5px;
+}
+
+.addbus form h2{
+
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(67, 66, 69);
+}
