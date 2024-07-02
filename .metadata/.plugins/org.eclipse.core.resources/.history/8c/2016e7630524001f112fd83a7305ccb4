@@ -1,0 +1,11 @@
+package org.jsp.reservationapi.dto;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class EmailConfiguration {
+	
+	private String toAddress;
+	private String subject;
+	private String text;
+}

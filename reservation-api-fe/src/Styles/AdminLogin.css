@@ -1,0 +1,80 @@
+/* Styles for the entire admin login page */
+.adminlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2a76cd 10%, #5151e5 100%);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Styles for the form */
+  .adminlogin form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-family: cursive;
+  }
+  
+  /* Styles for the labels */
+  .adminlogin form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Styles for the input fields */
+  .adminlogin form input[type="email"],
+  .adminlogin form input[type="password"] {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  /* Change border color on focus */
+  .adminlogin form input[type="text"]:focus,
+  .adminlogin form input[type="password"]:focus {
+    border-color: #5151e5;
+    outline: none;
+  }
+  
+  /* Styles for the button */
+  /* .adminlogin form button {
+    padding: 0.75rem;
+    background: #5151e5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  } */
+  
+  /* Change background color on hover */
+  .adminlogin form button:hover {
+    background: #969292;
+  }
+
+  .adminlogin form p{
+
+    margin-top: 5px;
+  }
+
+  .adminlogin form h2{
+
+      margin-bottom: 20px;
+      text-align: center;
+      color: #656363;
+  }
+
+  .adminlogin form input::placeholder{
+
+    color: #9b9b9d;
+  }

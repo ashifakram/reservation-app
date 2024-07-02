@@ -883,3 +883,2575 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-05-25 16:32:29.464 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-25 16:32:33.900
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-25 16:32:34.337
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-25 16:32:39.579
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-25 16:32:40.871
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-25 16:32:40.872
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-25 16:32:41.446
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-25 16:32:41.446
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-25 16:32:47.343
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1716634967342
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-25 16:32:47.344
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-25 16:32:47.392
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 13088
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-25 16:32:50.028
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-25 16:32:50.148
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-25 16:32:50.149
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-25 16:32:50.152
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-25 16:45:05.409
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-25 16:47:18.737
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-25 16:55:11.546
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-25 16:59:35.908
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-25 17:06:09.891
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-25 17:11:47.748
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-05-25 21:56:07.893 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-25 21:56:10.763
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-25 21:56:11.174
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-25 21:56:17.108
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-25 21:56:17.735
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-25 21:56:17.735
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-25 21:56:18.303
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-25 21:56:18.303
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-25 21:56:22.859
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1716654382858
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-25 21:56:22.859
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-25 21:56:22.877
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 5096
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-25 21:56:24.417
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-25 21:56:24.547
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-25 21:56:24.548
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-25 21:56:24.550
+!MESSAGE Started Boot LS process
+!SESSION 2024-05-27 14:31:01.661 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-27 14:31:05.024
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-27 14:31:05.368
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-27 14:31:22.630
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-27 14:31:23.174
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-27 14:31:23.174
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-27 14:31:23.565
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-27 14:31:23.565
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-27 14:31:27.954
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1716800487953
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-27 14:31:27.954
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-27 14:31:27.973
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 2116
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-27 14:31:29.279
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-27 14:31:29.367
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-27 14:31:29.367
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-27 14:31:29.369
+!MESSAGE Started Boot LS process
+!SESSION 2024-05-27 16:02:36.014 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-27 16:02:37.972
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-27 16:02:38.257
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-27 16:02:43.423
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-27 16:02:43.981
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-27 16:02:43.981
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-27 16:02:44.356
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-27 16:02:44.356
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-27 16:02:48.428
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1716805968426
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-27 16:02:48.429
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-27 16:02:48.442
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 3108
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-27 16:02:49.776
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-27 16:02:49.779
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-27 16:02:49.780
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-27 16:02:49.782
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-27 16:02:49.809
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-27 16:02:56.426
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-05-27 16:03:06.049
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.asJavaProposals(LSJavaCompletionProposalComputer.java:80)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.computeCompletionProposals(LSJavaCompletionProposalComputer.java:52)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:354)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:378)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-27 16:50:35.966
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-05-28 16:04:58.624 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-28 16:05:01.905
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-28 16:05:02.199
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-28 16:05:05.589
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-28 16:05:06.154
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-28 16:05:06.154
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-28 16:05:06.525
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-28 16:05:06.525
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-28 16:05:11.098
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1716892511097
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-28 16:05:11.099
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-28 16:05:11.114
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 1236
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-28 16:05:12.728
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-28 16:05:12.958
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-28 16:05:12.959
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-28 16:05:12.960
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-28 16:20:05.186
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-28 16:20:59.313
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-28 17:26:40.541
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-28 17:26:41.555
+!MESSAGE Could not get hover information due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-28 17:26:53.237
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:330)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getCompletionProposalAutoActivationCharacters(LSContentAssistProcessor.java:366)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isCompletionProposalAutoActivation(IContentAssistProcessorExtension.java:115)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1249)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$InternalListener.verifyKey(ContentAssistant.java:835)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:480)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5742)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4866)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-28 17:26:53.289
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:330)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getCompletionProposalAutoActivationCharacters(LSContentAssistProcessor.java:366)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isCompletionProposalAutoActivation(IContentAssistProcessorExtension.java:115)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1249)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:480)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5742)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4866)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-28 17:29:35.247
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-28 17:29:35.441
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-28 17:30:57.154
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-28 17:43:46.780
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-05-29 11:43:42.259 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-29 11:43:44.535
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-29 11:43:44.816
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-29 11:43:59.927
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-29 11:44:00.479
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-29 11:44:00.479
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-29 11:44:00.791
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-29 11:44:00.791
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-29 11:44:04.948
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1716963244947
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-29 11:44:04.948
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-29 11:44:04.959
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 6564
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-29 11:44:06.352
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-29 11:44:06.446
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-29 11:44:06.447
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-29 11:44:06.448
+!MESSAGE Started Boot LS process
+!SESSION 2024-05-29 16:32:39.391 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-29 16:32:42.838
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-29 16:32:43.190
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-29 16:32:59.181
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-29 16:32:59.700
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-29 16:32:59.700
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-29 16:33:00.112
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-29 16:33:00.112
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-29 16:33:04.908
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1716980584907
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-29 16:33:04.908
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-29 16:33:04.921
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 19280
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-29 16:33:06.477
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-29 16:33:06.539
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-29 16:33:06.539
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-29 16:33:06.540
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-05-29 16:33:30.101
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.asJavaProposals(LSJavaCompletionProposalComputer.java:80)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.computeCompletionProposals(LSJavaCompletionProposalComputer.java:52)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:354)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:378)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+!SESSION 2024-05-30 14:48:21.064 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-30 14:48:24.206
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-30 14:48:24.604
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-30 14:48:35.148
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-30 14:48:36.675
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-30 14:48:36.676
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-30 14:48:38.136
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-30 14:48:38.136
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-30 14:48:46.352
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717060726351
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-30 14:48:46.352
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-30 14:48:46.367
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 19580
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-30 14:48:48.703
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-30 14:48:48.794
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-30 14:48:48.795
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-30 14:48:48.797
+!MESSAGE Started Boot LS process
+!SESSION 2024-05-30 16:34:02.220 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-30 16:34:04.336
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-30 16:34:04.585
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-30 16:34:24.828
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-30 16:34:25.449
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-30 16:34:25.449
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-30 16:34:25.820
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-30 16:34:25.820
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-30 16:34:30.133
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717067070132
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-30 16:34:30.133
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-30 16:34:30.145
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 19044
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-30 16:34:31.515
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-30 16:34:31.626
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-30 16:34:31.627
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-30 16:34:31.630
+!MESSAGE Started Boot LS process
+!SESSION 2024-05-30 23:18:17.291 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-30 23:18:20.091
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-30 23:18:20.464
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-30 23:18:33.259
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-30 23:18:36.451
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-30 23:18:36.451
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-30 23:18:37.258
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-30 23:18:37.258
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-30 23:18:43.605
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717091323604
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-30 23:18:43.606
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-30 23:18:43.623
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 19280
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-30 23:18:51.854
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-30 23:18:53.698
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-30 23:18:53.698
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-30 23:18:53.704
+!MESSAGE Started Boot LS process
+!SESSION 2024-05-31 13:50:27.707 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-31 13:50:31.857
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-31 13:50:32.232
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-31 13:50:37.803
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-31 13:50:39.615
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-31 13:50:39.615
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-31 13:50:41.327
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-31 13:50:41.327
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-31 13:50:50.101
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717143650101
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 13:50:50.101
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-31 13:50:50.116
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 14988
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-31 13:51:01.559
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 13:51:01.702
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 13:51:01.703
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 13:51:01.706
+!MESSAGE Started Boot LS process
+!SESSION 2024-05-31 17:27:11.254 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -data F:\New folder (3)\java_jspider\Project
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-31 17:27:13.840
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-31 17:27:14.152
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-31 17:27:15.473
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-31 17:27:16.000
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-31 17:27:16.000
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-31 17:27:16.419
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-31 17:27:16.419
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-31 17:27:20.696
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717156640696
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:27:20.697
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-31 17:27:20.710
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 17648
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-31 17:27:21.822
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:27:22.045
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:27:22.045
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:27:22.046
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-31 17:33:33.366
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:330)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getCompletionProposalAutoActivationCharacters(LSContentAssistProcessor.java:366)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isCompletionProposalAutoActivation(IContentAssistProcessorExtension.java:115)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1249)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:480)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5742)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4866)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-31 17:33:33.419
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:330)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getContextInformationAutoActivationCharacters(LSContentAssistProcessor.java:373)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isContextInformationAutoActivation(IContentAssistProcessorExtension.java:128)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1252)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:480)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5742)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4866)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-31 17:33:35.585
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:330)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getCompletionProposalAutoActivationCharacters(LSContentAssistProcessor.java:366)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isCompletionProposalAutoActivation(IContentAssistProcessorExtension.java:115)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1249)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:480)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5742)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4866)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-31 17:33:35.638
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:330)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getContextInformationAutoActivationCharacters(LSContentAssistProcessor.java:373)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isContextInformationAutoActivation(IContentAssistProcessorExtension.java:128)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1252)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:480)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5742)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4866)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-31 17:33:36.261
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:330)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getCompletionProposalAutoActivationCharacters(LSContentAssistProcessor.java:366)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isCompletionProposalAutoActivation(IContentAssistProcessorExtension.java:115)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1249)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:480)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5742)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4866)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-31 17:33:36.313
+!MESSAGE Could not get trigger characters due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:330)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getContextInformationAutoActivationCharacters(LSContentAssistProcessor.java:373)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isContextInformationAutoActivation(IContentAssistProcessorExtension.java:128)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1252)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:346)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:375)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:480)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:68)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5742)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4866)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:33:53.683
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-05-31 17:33:53.888
+!MESSAGE Could not download sources for net.bytebuddy:byte-buddy:1.14.12
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact net.bytebuddy:byte-buddy:jar:sources:1.14.12
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not transfer artifact net.bytebuddy:byte-buddy:jar:sources:1.14.12 from/to central (https://repo.maven.apache.org/maven2): repo.maven.apache.org
+org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact net.bytebuddy:byte-buddy:jar:sources:1.14.12 from/to central (https://repo.maven.apache.org/maven2): repo.maven.apache.org
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:44)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:417)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:260)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:537)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:449)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:261)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:243)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:518)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.UnknownHostException: repo.maven.apache.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.ServiceUnavailableRetryExec.execute(ServiceUnavailableRetryExec.java:85)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:485)
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:435)
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:64)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:482)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:414)
+	... 23 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-05-31 17:33:53.889
+!MESSAGE Could not resolve artifact net.bytebuddy:byte-buddy:jar:sources:1.14.12
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-05-31 17:33:53.889
+!MESSAGE Could not transfer artifact net.bytebuddy:byte-buddy:jar:sources:1.14.12 from/to central (https://repo.maven.apache.org/maven2): repo.maven.apache.org
+!STACK 0
+org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact net.bytebuddy:byte-buddy:jar:sources:1.14.12 from/to central (https://repo.maven.apache.org/maven2): repo.maven.apache.org
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:44)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:417)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:260)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:537)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:449)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:261)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:243)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:518)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.UnknownHostException: repo.maven.apache.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.ServiceUnavailableRetryExec.execute(ServiceUnavailableRetryExec.java:85)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:485)
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:435)
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:64)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:482)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:414)
+	... 23 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-05-31 17:34:17.010
+!MESSAGE -2
+!STACK 0
+org.eclipse.jface.text.BadLocationException: -2
+	at org.eclipse.jface.text.TreeLineTracker.nodeByLine(TreeLineTracker.java:302)
+	at org.eclipse.jface.text.TreeLineTracker.getLineLength(TreeLineTracker.java:1106)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineLength(AbstractLineTracker.java:240)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getLineLength(BasicStructuredDocument.java:1486)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getLineLength(LSPEclipseUtils.java:211)
+	at org.eclipse.lsp4e.LSPEclipseUtils.toOffset(LSPEclipseUtils.java:204)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.getExistingMarkerFor(LSPDiagnosticsToMarkers.java:226)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers$1.runInWorkspace(LSPDiagnosticsToMarkers.java:162)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-05-31 17:34:17.013
+!MESSAGE -2
+!STACK 0
+org.eclipse.jface.text.BadLocationException: -2
+	at org.eclipse.jface.text.TreeLineTracker.nodeByLine(TreeLineTracker.java:302)
+	at org.eclipse.jface.text.TreeLineTracker.getLineLength(TreeLineTracker.java:1106)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineLength(AbstractLineTracker.java:240)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getLineLength(BasicStructuredDocument.java:1486)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getLineLength(LSPEclipseUtils.java:211)
+	at org.eclipse.lsp4e.LSPEclipseUtils.toOffset(LSPEclipseUtils.java:204)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.getExistingMarkerFor(LSPDiagnosticsToMarkers.java:226)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers$1.runInWorkspace(LSPDiagnosticsToMarkers.java:162)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-05-31 17:34:31.859
+!MESSAGE Could not download javadoc for net.bytebuddy:byte-buddy:1.14.12
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact net.bytebuddy:byte-buddy:jar:javadoc:1.14.12
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not transfer artifact net.bytebuddy:byte-buddy:jar:javadoc:1.14.12 from/to central (https://repo.maven.apache.org/maven2): No such host is known (repo.maven.apache.org)
+org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact net.bytebuddy:byte-buddy:jar:javadoc:1.14.12 from/to central (https://repo.maven.apache.org/maven2): No such host is known (repo.maven.apache.org)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:44)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:417)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:260)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:537)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:449)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:261)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:243)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:518)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.UnknownHostException: No such host is known (repo.maven.apache.org)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.ServiceUnavailableRetryExec.execute(ServiceUnavailableRetryExec.java:85)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:485)
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:435)
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:64)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:482)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:414)
+	... 23 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-05-31 17:34:31.860
+!MESSAGE Could not resolve artifact net.bytebuddy:byte-buddy:jar:javadoc:1.14.12
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-05-31 17:34:31.860
+!MESSAGE Could not transfer artifact net.bytebuddy:byte-buddy:jar:javadoc:1.14.12 from/to central (https://repo.maven.apache.org/maven2): No such host is known (repo.maven.apache.org)
+!STACK 0
+org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact net.bytebuddy:byte-buddy:jar:javadoc:1.14.12 from/to central (https://repo.maven.apache.org/maven2): No such host is known (repo.maven.apache.org)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:44)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:417)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:260)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:537)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:449)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:261)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:243)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:518)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.UnknownHostException: No such host is known (repo.maven.apache.org)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.ServiceUnavailableRetryExec.execute(ServiceUnavailableRetryExec.java:85)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:485)
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:435)
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:64)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:482)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:414)
+	... 23 more
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:37:00.378
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:37:00.431
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:37:08.262
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:37:30.992
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:37:31.038
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:37:34.992
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:37:58.897
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:38:02.398
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-31 18:01:51.417
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-06-01 11:26:04.744 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-06-01 11:26:07.834
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-01 11:26:08.289
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-01 11:26:16.671
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-06-01 11:26:17.600
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-01 11:26:17.600
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-06-01 11:26:18.163
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-01 11:26:18.163
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-01 11:26:23.630
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717221383629
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 11:26:23.631
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-01 11:26:23.657
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 8908
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-01 11:26:25.776
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 11:26:25.856
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 11:26:25.856
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 11:26:25.859
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-01 11:26:35.368
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-01 11:26:36.429
+!MESSAGE Could not get hover information due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-01 11:26:39.742
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-01 11:26:40.875
+!MESSAGE Could not get hover information due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 11:26:48.973
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 11:26:49.769
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 11:26:54.354
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 11:26:54.672
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-01 11:26:57.780
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-01 11:26:58.796
+!MESSAGE Could not get hover information due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-01 11:27:00.301
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-01 11:35:38.906
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-01 11:35:55.309
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-01 11:36:17.702
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-06-01 14:00:50.696 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-06-01 14:00:53.154
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-01 14:00:53.410
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-01 14:01:04.902
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-06-01 14:01:05.475
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-01 14:01:05.475
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-06-01 14:01:05.869
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-01 14:01:05.869
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-01 14:01:09.846
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717230669844
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 14:01:09.847
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-01 14:01:09.859
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 3292
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-01 14:01:11.004
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 14:01:11.172
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 14:01:11.172
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 14:01:11.173
+!MESSAGE Started Boot LS process
+!SESSION 2024-06-01 18:13:29.011 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-06-01 18:13:30.676
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-01 18:13:30.930
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-01 18:13:34.153
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-06-01 18:13:34.746
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-01 18:13:34.746
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-06-01 18:13:35.069
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-01 18:13:35.069
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-01 18:13:38.644
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717245818643
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 18:13:38.644
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-01 18:13:38.662
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 9160
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-01 18:13:40.033
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 18:13:40.070
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 18:13:40.070
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-01 18:13:40.074
+!MESSAGE Started Boot LS process
+!SESSION 2024-06-06 18:09:12.325 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-06-06 18:09:16.352
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-06 18:09:16.768
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-06 18:09:22.901
+!MESSAGE Logback config file: F:\New folder (3)\java_jspider\Project\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-06-06 18:09:23.438
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-06 18:09:23.438
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-06-06 18:09:23.782
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-06 18:09:23.782
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-06 18:09:28.785
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\CSC\Desktop\Jspider\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=F:/New folder (3)/java_jspider/Project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717677568785
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-06 18:09:28.785
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-06 18:09:28.801
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 3900
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-06 18:09:30.303
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CSC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-06 18:09:30.427
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-06 18:09:30.429
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-06 18:09:30.434
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-06 18:09:47.581
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-06 18:09:48.586
+!MESSAGE Could not get hover information due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-06 18:09:51.350
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-06 18:09:55.190
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-06 18:09:56.612
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-06 18:09:57.661
+!MESSAGE Could not get hover information due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-06 18:31:07.759
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-06 18:31:24.721
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-06 18:55:43.007
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-06 19:01:47.497
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-06 19:08:09.049
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-06 19:32:33.895
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)

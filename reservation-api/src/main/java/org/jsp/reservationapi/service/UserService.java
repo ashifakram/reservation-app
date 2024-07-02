@@ -3,20 +3,31 @@ package org.jsp.reservationapi.service;
 import java.util.Optional;
 
 import org.jsp.reservationapi.dao.UserDao;
+import org.jsp.reservationapi.dto.EmailConfiguration;
 import org.jsp.reservationapi.dto.ResponseStructure;
 import org.jsp.reservationapi.dto.UserRequest;
+import org.jsp.reservationapi.dto.UserResponse;
 import org.jsp.reservationapi.exception.UserNotFoundException;
 import org.jsp.reservationapi.model.User;
+import org.jsp.reservationapi.util.AccountStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 @Service
 public class UserService {
 	
 	@Autowired
 	private UserDao userDao;
+	@Autowired
+	private LinkGeneratorService linkGeneratorService;
+	@Autowired
+	private ReservationApiMailService mailService;
+	@Autowired
+	private EmailConfiguration emailConfiguration;
 	
 	/**
 	 * This method will accept {@link UserRequest} and maps it to {@link User} and by calling 
@@ -25,14 +36,25 @@ public class UserService {
 	 * @return {@link ResponseEntity}
 	 * @throws ConstraintViolationException if any constraint is violated
 	 */
-	public ResponseEntity<ResponseStructure<User>> saveUser(UserRequest userRequest) {
+	public ResponseEntity<ResponseStructure<UserResponse>> saveUser(UserRequest userRequest, HttpServletRequest request) {
 
-		ResponseStructure<User> structure = new ResponseStructure<>();
+		ResponseStructure<UserResponse> structure = new ResponseStructure<>();
 
-		structure.setMessage("User saved");
-		structure.setData(userDao.saveUser(mapToUser(userRequest)));
+		User user = mapToUser(userRequest);
+		
+		user.setStatus(AccountStatus.IN_ACTIVE.toString());
+		user = userDao.saveUser(user);
+		
+		String activation_link = linkGeneratorService.getActivationLink(user, request);
+		
+		emailConfiguration.setSubject("Activate Your Account");
+		emailConfiguration.setText("Dear User Please Activate Your Account by clicking on the following link:" + activation_link);
+		emailConfiguration.setToAddress(user.getEmail());
+		
+		structure.setMessage(mailService.sendMail(emailConfiguration));
+		structure.setData(mapToUserResponse(user));
 		structure.setStatusCode(HttpStatus.CREATED.value());
-
+		
 		return ResponseEntity.status(HttpStatus.CREATED).body(structure);
 	}
 
@@ -44,20 +66,25 @@ public class UserService {
 	 * @return {@link ResponseEntity}
 	 * @throws {@code UserNotFoundException} if Identifier is Invalid
 	 */
-	public ResponseEntity<ResponseStructure<User>> updateUser(UserRequest userRequest, int id) {
+	public ResponseEntity<ResponseStructure<UserResponse>> updateUser(UserRequest userRequest, int id) {
 
-		ResponseStructure<User> structure = new ResponseStructure<>();
+		ResponseStructure<UserResponse> structure = new ResponseStructure<>();
 
 		Optional<User> recUser = userDao.findUserById(id);
 
 		if (recUser.isPresent()) {
 
-			User dbUser = mapToUser(userRequest);
+			User dbUser = recUser.get();
 			
-			dbUser.setId(id);
+			dbUser.setName(userRequest.getName());
+			dbUser.setEmail(userRequest.getEmail());
+			dbUser.setPhone(userRequest.getPhone());
+			dbUser.setAge(userRequest.getAge());
+			dbUser.setGender(userRequest.getGender());
+			dbUser.setPassword(userRequest.getPassword());
 			
 			structure.setMessage("User updated");
-			structure.setData(userDao.saveUser(dbUser));
+			structure.setData(mapToUserResponse(userDao.saveUser(dbUser)));
 			structure.setStatusCode(HttpStatus.ACCEPTED.value());
 
 			return ResponseEntity.status(HttpStatus.ACCEPTED).body(structure);
@@ -66,15 +93,15 @@ public class UserService {
 		throw new UserNotFoundException("Cannot update User as Id is invalid");
 	}
 	
-	public ResponseEntity<ResponseStructure<User>> findUserById(int id) {
+	public ResponseEntity<ResponseStructure<UserResponse>> findUserById(int id) {
 		
-		ResponseStructure<User> structure = new ResponseStructure<>();
+		ResponseStructure<UserResponse> structure = new ResponseStructure<>();
 
 		Optional<User> recUser = userDao.findUserById(id);
 		
 		if( recUser.isPresent()) {
 			
-			structure.setData(recUser.get());
+			structure.setData(mapToUserResponse(recUser.get()));
 			structure.setMessage("User Found");
 			structure.setStatusCode(HttpStatus.OK.value());
 			
@@ -83,34 +110,44 @@ public class UserService {
 		throw new UserNotFoundException("Invalid User Id");
 	}
 
-	public ResponseEntity<ResponseStructure<User>> verifyUserByPhoneAndPassword(long phone, String password) {
+	public ResponseEntity<ResponseStructure<UserResponse>> verifyUserByPhoneAndPassword(long phone, String password) {
 
-		ResponseStructure<User> structure = new ResponseStructure<>();
+		ResponseStructure<UserResponse> structure = new ResponseStructure<>();
 
 		Optional<User> recUser = userDao.verifyUserByPhoneAndPassword(phone, password);
 
 		if (recUser.isPresent()) {
+			
+			User user = recUser.get();
+			
+			if (user.getStatus().equals(AccountStatus.IN_ACTIVE.toString()))
+				throw new IllegalStateException("Please Activate Your Account before You SignIn");
 
 			structure.setMessage("User Found and Verification Succesfull");
 			structure.setStatusCode(HttpStatus.OK.value());
-			structure.setData(recUser.get());
+			structure.setData(mapToUserResponse(user));
 
 			return ResponseEntity.status(HttpStatus.OK).body(structure);
 		}
 		throw new UserNotFoundException("Invalid Phone number or password");
 	}
 
-	public ResponseEntity<ResponseStructure<User>> verifyUserByEmailAndPassword(String email, String password) {
+	public ResponseEntity<ResponseStructure<UserResponse>> verifyUserByEmailAndPassword(String email, String password) {
 
-		ResponseStructure<User> structure = new ResponseStructure<>();
+		ResponseStructure<UserResponse> structure = new ResponseStructure<>();
 
 		Optional<User> recUser = userDao.verifyUserByEmailAndPassword(email, password);
 
 		if (recUser.isPresent()) {
+			
+			User user = recUser.get();
+			
+			if (user.getStatus().equals(AccountStatus.IN_ACTIVE.toString()))
+				throw new IllegalStateException("Please Activate Your Account before You SignIn");
 
 			structure.setMessage("User Found and Verification Succesfull");
 			structure.setStatusCode(HttpStatus.OK.value());
-			structure.setData(recUser.get());
+			structure.setData(mapToUserResponse(user));
 
 			return ResponseEntity.status(HttpStatus.OK).body(structure);
 		}
@@ -141,5 +178,28 @@ public class UserService {
 		
 		return User.builder().name(userRequest.getName()).phone(userRequest.getPhone()).email(userRequest.getEmail())
 				.gender(userRequest.getGender()).age(userRequest.getAge()).password(userRequest.getPassword()).build();
+	}
+	
+	private UserResponse mapToUserResponse(User user) {
+		
+		return UserResponse.builder().id(user.getId()).name(user.getName()).email(user.getEmail())
+				.phone(user.getPhone()).age(user.getAge()).gender(user.getGender())
+				.password(user.getPassword()).build();
+	}
+	
+	public String activate(String token) {
+		
+		Optional<User> recUser = userDao.findByToken(token);
+		
+		if (recUser.isEmpty())
+			throw new UserNotFoundException("Invalid Token");
+		
+		User dbUser = recUser.get();
+		
+		dbUser.setStatus("ACTIVE");
+		dbUser.setToken(null);
+		userDao.saveUser(dbUser);
+		
+		return "Your Account has been activated";
 	}
 }
